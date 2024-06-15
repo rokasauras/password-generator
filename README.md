@@ -14,3 +14,4 @@ The password will include a complexion of lowercase letters, uppercase letters, 
 ### To improve
 1. Include support for symbols
 2. Include support for saving credentials to a locked file
+3. Make gui
