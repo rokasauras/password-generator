@@ -1,4 +1,3 @@
-import numpy  # numpy is imported but not used in the code
 import random
 import string
 
