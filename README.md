@@ -1,17 +1,53 @@
-## Password Generator
-### Description
+# Password Generator
 
-This Python code generates a password for you, with a specified length.
-The password will include a complexion of lowercase letters, uppercase letters, and numbers in a random order.
+## Description
 
-### How to use
+This Python script generates a secure password with a specified length. The generated password includes a combination of lowercase letters, uppercase letters, and digits in a random order.
 
-1. Save the Python file
-2. Run the file from your terminal using Python
-3. You will be asked what password length you desire, enter a number and press enter
-4. The code will generate a password of the specified length and display it to you
+## How to Use
 
-### To improve
-1. Include support for symbols
-2. Include support for saving credentials to a locked file
-3. Make gui
+1. **Save the Python File:**
+   - Download and save the `password_generator.py` file on your computer.
+
+2. **Run the Script:**
+   - Open your terminal or command prompt.
+   - Navigate to the directory where `password_generator.py` is saved.
+   - Run the script using Python:
+     ```
+     python password_generator.py
+     ```
+
+3. **Enter Password Length:**
+   - You will be prompted to enter the desired password length.
+   - Input a number and press **Enter**.
+
+4. **Generated Password:**
+   - The script will generate a password of the specified length and display it on the terminal.
+
+## To Improve
+
+1. **Include Support for Symbols:**
+   - Modify the script to include symbols (such as `!@#$%^&*()`) in the generated passwords for added complexity.
+
+2. **Include Support for Saving Credentials:**
+   - Enhance the script to save generated passwords securely to a file, possibly encrypted or in a format that protects sensitive information.
+
+3. **Implement GUI (Graphical User Interface):**
+   - Develop a graphical interface using a library like Tkinter or PyQt to make the password generation process more user-friendly.
+
+## Example
+
+```python
+import random
+import string
+
+def random_password(password_length):
+    # Generates a random password including lowercase, uppercase letters, and digits
+    characters = string.ascii_letters + string.digits
+    password = ''.join(random.choice(characters) for i in range(password_length))
+    return password
+
+if __name__ == "__main__":
+    password_length = int(input("Enter the password length: "))
+    generated_password = random_password(password_length)
+    print(f"Generated Password: {generated_password}")
