@@ -35,6 +35,8 @@ This Python script generates a secure password with a specified length. The gene
 3. **Implement GUI (Graphical User Interface):**
    - Develop a graphical interface using a library like Tkinter or PyQt to make the password generation process more user-friendly.
 
+4. **Add arrows or sliders to GUI
+
 ## Example
 
 ```python
