@@ -2,7 +2,8 @@
 
 ## Description
 
-This Python script generates a secure password with a specified length. The generated password includes a combination of lowercase letters, uppercase letters, and digits in a random order.
+This Python script generates a secure password with a specified length. The generated password includes a combination of lowercase letters, uppercase letters, and digits in a random order. It now asks whether you'd like to 
+include special characters in your generated password.
 
 ## How to Use
 
@@ -21,35 +22,28 @@ This Python script generates a secure password with a specified length. The gene
    - You will be prompted to enter the desired password length.
    - Input a number and press **Enter**.
 
-4. **Generated Password:**
+4. **Include special characters?**
+   -You will be promted to enter yes/no to special characters
+   -Input yes/no
+
+
+5. **Generated Password:**
    - The script will generate a password of the specified length and display it on the terminal.
 
 ## To Improve
 
-1. **Include Support for Symbols:**
-   - Modify the script to include symbols (such as `!@#$%^&*()`) in the generated passwords for added complexity.
-
-2. **Include Support for Saving Credentials:**
+1. **Include Support for Saving Credentials:**
    - Enhance the script to save generated passwords securely to a file, possibly encrypted or in a format that protects sensitive information.
 
-3. **Implement GUI (Graphical User Interface):**
+2. **Implement GUI (Graphical User Interface):**
    - Develop a graphical interface using a library like Tkinter or PyQt to make the password generation process more user-friendly.
 
-4. **Add arrows or sliders to GUI
+3. **Add arrows or sliders to GUI**
 
 ## Example
 
 ```python
-import random
-import string
-
-def random_password(password_length):
-    # Generates a random password including lowercase, uppercase letters, and digits
-    characters = string.ascii_letters + string.digits
-    password = ''.join(random.choice(characters) for i in range(password_length))
-    return password
-
-if __name__ == "__main__":
-    password_length = int(input("Enter the password length: "))
-    generated_password = random_password(password_length)
-    print(f"Generated Password: {generated_password}")
+$ python password_generator.py
+Enter the password length: 12
+Include punctuation? (yes/no): yes
+Generated password: aB1$cDeFgH!2
