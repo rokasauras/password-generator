@@ -11,7 +11,7 @@ include special characters in your generated password.
    - Download and save the `password_generator.py` file on your computer.
 
 2. **Run the Script:**
-   - Open your terminal or command prompt.
+   - Open your terminal.
    - Navigate to the directory where `password_generator.py` is saved.
    - Run the script using Python:
      ```
